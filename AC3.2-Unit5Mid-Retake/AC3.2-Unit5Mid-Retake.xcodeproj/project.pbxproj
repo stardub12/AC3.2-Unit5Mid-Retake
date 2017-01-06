@@ -29,7 +29,7 @@
 		1456CB491E1EDE0B0074D63C /* IndexTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexTableViewController.swift; sourceTree = "<group>"; };
 		1456CB4B1E1EDE470074D63C /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		1456CB4F1E1F4C550074D63C /* DesignOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; name = DesignOneViewController.swift; path = Autolayout/DesignOneViewController.swift; sourceTree = "<group>"; tabWidth = 4; };
-		1456CB521E1F4E950074D63C /* DesignTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DesignTwoViewController.swift; path = Autolayout/DesignTwoViewController.swift; sourceTree = "<group>"; };
+		1456CB521E1F4E950074D63C /* DesignTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; name = DesignTwoViewController.swift; path = Autolayout/DesignTwoViewController.swift; sourceTree = "<group>"; tabWidth = 4; };
 		1EAFCDB31E1FB290002220CC /* BooksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BooksTableViewController.swift; path = CoreData/BooksTableViewController.swift; sourceTree = "<group>"; };
 		1EAFCDB51E1FB380002220CC /* APIRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
