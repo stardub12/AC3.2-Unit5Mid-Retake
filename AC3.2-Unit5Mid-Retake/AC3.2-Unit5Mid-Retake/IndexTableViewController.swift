@@ -34,7 +34,7 @@ class IndexTableViewController: UITableViewController {
   
   // Assesment View Controllers
   private let autoLayoutViewControllers: [CellTitled] = [DesignOneViewController(), DesignTwoViewController()]
-  private let coreDataViewControllers: [CellTitled] = []
+  private let coreDataViewControllers: [CellTitled] = [ BooksTableViewController() ]
   
   let cellIdentifier: String = "IndexCellIdentifier"
   
@@ -85,9 +85,8 @@ class IndexTableViewController: UITableViewController {
       let dtvc = autoLayoutViewControllers[row] as! UIViewController
       navigationController?.pushViewController(dtvc, animated: true)
     case (1, 0):
-      // TODO: Add Core Data VC
-      print("TODO: Add Core Data VC")
-      
+        let rtvc = BooksTableViewController()
+        navigationController?.pushViewController(rtvc, animated: true)
     default:
       print("Add row")
     }
