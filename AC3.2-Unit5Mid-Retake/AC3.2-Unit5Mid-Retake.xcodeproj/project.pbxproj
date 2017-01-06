@@ -15,6 +15,8 @@
 		1456CB4C1E1EDE470074D63C /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1456CB4B1E1EDE470074D63C /* Utilities.swift */; };
 		1456CB501E1F4C550074D63C /* DesignOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1456CB4F1E1F4C550074D63C /* DesignOneViewController.swift */; };
 		1456CB531E1F4E950074D63C /* DesignTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1456CB521E1F4E950074D63C /* DesignTwoViewController.swift */; };
+		1EAFCDB41E1FB290002220CC /* BooksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAFCDB31E1FB290002220CC /* BooksTableViewController.swift */; };
+		1EAFCDB61E1FB380002220CC /* APIRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAFCDB51E1FB380002220CC /* APIRequestManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		1456CB4B1E1EDE470074D63C /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		1456CB4F1E1F4C550074D63C /* DesignOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; name = DesignOneViewController.swift; path = Autolayout/DesignOneViewController.swift; sourceTree = "<group>"; tabWidth = 4; };
 		1456CB521E1F4E950074D63C /* DesignTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DesignTwoViewController.swift; path = Autolayout/DesignTwoViewController.swift; sourceTree = "<group>"; };
+		1EAFCDB31E1FB290002220CC /* BooksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BooksTableViewController.swift; path = CoreData/BooksTableViewController.swift; sourceTree = "<group>"; };
+		1EAFCDB51E1FB380002220CC /* APIRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 		1456CB321E1EDD770074D63C /* AC3.2-Unit5Mid-Retake */ = {
 			isa = PBXGroup;
 			children = (
+				1EAFCDB71E1FB387002220CC /* Networking */,
+				1EAFCDB21E1FB255002220CC /* CoreData */,
 				1456CB331E1EDD770074D63C /* AppDelegate.swift */,
 				1456CB511E1F4C580074D63C /* Autolayout */,
 				1456CB481E1EDD920074D63C /* Supporting Files */,
@@ -87,6 +93,22 @@
 				1456CB521E1F4E950074D63C /* DesignTwoViewController.swift */,
 			);
 			name = Autolayout;
+			sourceTree = "<group>";
+		};
+		1EAFCDB21E1FB255002220CC /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				1EAFCDB31E1FB290002220CC /* BooksTableViewController.swift */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		1EAFCDB71E1FB387002220CC /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				1EAFCDB51E1FB380002220CC /* APIRequestManager.swift */,
+			);
+			name = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,8 +182,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EAFCDB61E1FB380002220CC /* APIRequestManager.swift in Sources */,
 				1456CB3C1E1EDD770074D63C /* AC3_2_Unit5Mid_Retake.xcdatamodeld in Sources */,
 				1456CB341E1EDD770074D63C /* AppDelegate.swift in Sources */,
+				1EAFCDB41E1FB290002220CC /* BooksTableViewController.swift in Sources */,
 				1456CB4C1E1EDE470074D63C /* Utilities.swift in Sources */,
 				1456CB501E1F4C550074D63C /* DesignOneViewController.swift in Sources */,
 				1456CB4A1E1EDE0B0074D63C /* IndexTableViewController.swift in Sources */,
@@ -319,6 +343,7 @@
 				1456CB471E1EDD770074D63C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
