@@ -13,6 +13,8 @@
 		1456CB411E1EDD770074D63C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1456CB3F1E1EDD770074D63C /* LaunchScreen.storyboard */; };
 		1456CB4A1E1EDE0B0074D63C /* IndexTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1456CB491E1EDE0B0074D63C /* IndexTableViewController.swift */; };
 		1456CB4C1E1EDE470074D63C /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1456CB4B1E1EDE470074D63C /* Utilities.swift */; };
+		1456CB501E1F4C550074D63C /* DesignOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1456CB4F1E1F4C550074D63C /* DesignOneViewController.swift */; };
+		1456CB531E1F4E950074D63C /* DesignTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1456CB521E1F4E950074D63C /* DesignTwoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		1456CB421E1EDD770074D63C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1456CB491E1EDE0B0074D63C /* IndexTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexTableViewController.swift; sourceTree = "<group>"; };
 		1456CB4B1E1EDE470074D63C /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		1456CB4F1E1F4C550074D63C /* DesignOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; name = DesignOneViewController.swift; path = Autolayout/DesignOneViewController.swift; sourceTree = "<group>"; tabWidth = 4; };
+		1456CB521E1F4E950074D63C /* DesignTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DesignTwoViewController.swift; path = Autolayout/DesignTwoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				1456CB331E1EDD770074D63C /* AppDelegate.swift */,
+				1456CB511E1F4C580074D63C /* Autolayout */,
 				1456CB481E1EDD920074D63C /* Supporting Files */,
 				1456CB3A1E1EDD770074D63C /* AC3_2_Unit5Mid_Retake.xcdatamodeld */,
 			);
@@ -73,6 +78,15 @@
 				1456CB421E1EDD770074D63C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1456CB511E1F4C580074D63C /* Autolayout */ = {
+			isa = PBXGroup;
+			children = (
+				1456CB4F1E1F4C550074D63C /* DesignOneViewController.swift */,
+				1456CB521E1F4E950074D63C /* DesignTwoViewController.swift */,
+			);
+			name = Autolayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,7 +163,9 @@
 				1456CB3C1E1EDD770074D63C /* AC3_2_Unit5Mid_Retake.xcdatamodeld in Sources */,
 				1456CB341E1EDD770074D63C /* AppDelegate.swift in Sources */,
 				1456CB4C1E1EDE470074D63C /* Utilities.swift in Sources */,
+				1456CB501E1F4C550074D63C /* DesignOneViewController.swift in Sources */,
 				1456CB4A1E1EDE0B0074D63C /* IndexTableViewController.swift in Sources */,
+				1456CB531E1F4E950074D63C /* DesignTwoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
