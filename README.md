@@ -1,4 +1,34 @@
 # AC3.2-Unit5Mid-Retake
+---
+### Part 1: Programmatic Autolayout
+
+#### Design 1: Pokédex(-ish)
+
+** Instructions **
+
+Your goal is to reproduce the image below, with the following guidelines:
+
+1. You can use any form of programmatic autolayout to do so (`NSLayoutConstraint`, Visual Format Language or `NSLayoutAnchor`)
+2. Look over the provided `let`s in order to guide your spacing/margin/pt/colors. **YOU MUST USE THEM**
+3. It should be obvious where each `let` is used in the image
+4. The bottom image is intended to be scrollable horizontally. I have provided an image of what it looks like in its entirety
+
+![Q1](./Images/Unit 5 Makeup Q1.png)
+![Full Banner](./Images/pikachu_evolution.png)
+
+---
+#### Design 2: Pokéball!
+
+** Instructions **
+
+Your goal is to reproduce the image below, with the following guidelines:
+
+1. You will not have to use the helper function I showed you in class/that I used for the sample solution from the original Unit 5 assesment. This is to ensure you understand the theory behind what that function does instead of just copy/pasting code. 
+2. Don't forget to add in the `pikachuImageView`'s constraints
+3. You must be able to transition back from landscape to portrait. This is a *real* app, and rotations should work both ways. 
+
+![Q2 - P](./Images/Unit 5 Makeup Q2 - Portrait.png)
+![Q2 - L](./Images/Unit 5 Makeup Q2 - Landscape.png)
 
 ---
 ### Part 2: Core Data and Nib-backed Table View Cells
