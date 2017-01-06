@@ -187,6 +187,9 @@ class DesignTwoViewController: UIViewController, CellTitled {
             //
             // FIll in these constraints too!
             //
+            pikachuImageView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor),
+            pikachuImageView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor)
+            
             
         ]
         
@@ -202,11 +205,90 @@ class DesignTwoViewController: UIViewController, CellTitled {
     
     func configureLandscapeConstraints() {
         
-    }
-    
-    override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
+        topPokeballConstraints = [
+            topPokeballView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 8.0),
+            topPokeballView.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 8.0),
+            topPokeballView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -8.0)
+            
+        ]
+        
+        bottomPokeballConstraints = [
+            bottomPokeballView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -8.0),
+            bottomPokeballView.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 8.0),
+            bottomPokeballView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -8.0)
+        ]
+        
+        pokeballLineConstraints = [
+            pokeballLineView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+            pokeballLineView.topAnchor.constraint(equalTo: self.view.topAnchor),
+            pokeballLineView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
+            pokeballLineView.widthAnchor.constraint(equalToConstant: pokeballOpenHalfWidth)
+        ]
+        
+        pikachuImageConstraints = [
+            pikachuImageView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor),
+            pikachuImageView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+            pikachuImageView.heightAnchor.constraint(equalToConstant: pikachuDimensions.height),
+            pikachuImageView.widthAnchor.constraint(equalToConstant: pikachuDimensions.width)
+        ]
+        
+        pokeballButtonConstraints = [
+            pokeballButtonOutterView.leadingAnchor.constraint(equalTo: bottomPokeballView.leadingAnchor),
+            pokeballButtonMidView.leadingAnchor.constraint(equalTo: bottomPokeballView.leadingAnchor),
+            pokeballButtonInnerView.leadingAnchor.constraint(equalTo: bottomPokeballView.leadingAnchor),
+            pokeballButtonInnerView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor),
+            pokeballButtonMidView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor),
+            pokeballButtonOutterView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor)
+        ]
+        
+        pokeballButtonSizeConstraints = [
+            pokeballButtonInnerView.heightAnchor.constraint(equalToConstant: pokeballButtonInnerSize.height),
+            pokeballButtonInnerView.widthAnchor.constraint(equalToConstant: pokeballButtonInnerSize.width),
+            pokeballButtonMidView.heightAnchor.constraint(equalToConstant: pokeballButtonMidSize.height),
+            pokeballButtonMidView.widthAnchor.constraint(equalToConstant: pokeballButtonMidSize.width),
+            pokeballButtonOutterView.heightAnchor.constraint(equalToConstant: pokeballButtonOutterSize.height),
+            pokeballButtonOutterView.widthAnchor.constraint(equalToConstant: pokeballButtonOutterSize.width)
+        ]
+        
+      
+        
+        let _ = [
+            topPokeballConstraints,
+            bottomPokeballConstraints,
+            pokeballLineConstraints,
+            pokeballButtonConstraints,
+            pokeballButtonSizeConstraints,
+            pikachuImageConstraints
+            ].map{ $0.map { $0.isActive = true } }
+
         
     }
     
+    
+    
+    override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
+        
+        coordinator.animate(alongsideTransition: { (UIViewControllerTransitionCoordinatorContext) -> Void in
+            
+            let orient = UIApplication.shared.statusBarOrientation
+            
+            switch orient {
+            case .portrait:
+                print("Portrait")
+                self.configurePortraitConstraints()
+            case .landscapeRight, .landscapeLeft:
+                self.configureLandscapeConstraints()
+                print("Landscape")
+            default:
+                print("Not Portrait/Landscape")
+            }
+            
+            }, completion: { (UIViewControllerTransitionCoordinatorContext) -> Void in
+                print("rotation completed")
+        })
+        
+        super.willTransition(to: newCollection, with: coordinator)
+    }
+
     
 }
